@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Portafolio | Ingeniero de Sistemas</title>
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* =========================
+           CONFIGURACIÓN GENERAL
+        ========================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --fondo: #030507;
+            --azul: #2789ff;
+            --texto: #f5f5f5;
+            --texto-secundario: #a6b4c5;
+            --borde: #1a2a3b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--fondo);
+            color: var(--texto);
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* =========================
+           CONTENEDOR PRINCIPAL
+        ========================== */
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1.35fr 0.85fr;
+            align-items: center;
+            padding: 40px 3.5%;
+            overflow: hidden;
+            gap: 50px;
+        }
+
+        /* Luz azul de fondo */
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            right: -100px;
+            top: 50px;
+            background: rgba(0, 105, 255, 0.12);
+            filter: blur(120px);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        /* =========================
+           INFORMACIÓN PERSONAL
+        ========================== */
+
+        .contenido {
+            position: relative;
+            z-index: 1;
+            max-width: 750px;
+        }
+
+        .nombre {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--texto-secundario);
+            margin-bottom: 12px;
+        }
+
+        .titulo {
+            font-size: clamp(58px, 6.2vw, 90px);
+            font-weight: 800;
+            line-height: 0.96;
+            letter-spacing: -5px;
+            margin-bottom: 25px;
+        }
+
+        .titulo span {
+            display: block;
+            color: var(--azul);
+        }
+
+        /* Ubicación */
+
+        .ubicacion {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--texto-secundario);
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .ubicacion i {
+            font-size: 19px;
+        }
+
+        /* =========================
+           DESCRIPCIÓN
+        ========================== */
+
+        .descripcion {
+            border-top: 1px solid var(--borde);
+            border-right: 1px solid var(--borde);
+            padding: 28px 24px 20px;
+            margin-left: -24px;
+            max-width: 720px;
+        }
+
+        .descripcion p {
+            color: var(--texto-secundario);
+            font-size: 19px;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        /* =========================
+           BOTONES
+        ========================== */
+
+        .botones {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .boton {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .boton i {
+            font-size: 20px;
+        }
+
+        .boton-azul {
+            background: var(--azul);
+            color: #030507;
+        }
+
+        .boton-azul:hover {
+            background: #60a7ff;
+            transform: translateY(-3px);
+        }
+
+        .boton-borde {
+            background: transparent;
+            color: var(--texto);
+            border-color: #202020;
+        }
+
+        .boton-borde:hover {
+            border-color: var(--azul);
+            color: var(--azul);
+            transform: translateY(-3px);
+        }
+
+        /* =========================
+           IMAGEN DE PERFIL
+        ========================== */
+
+        .perfil {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .marco {
+            width: min(100%, 390px);
+            padding: 15px;
+            border: 1px solid var(--borde);
+            background: rgba(8, 20, 35, 0.25);
+        }
+
+        .imagen-perfil {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+            border-radius: 15px;
+            background: #050505;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 45px;
+                padding: 50px 7%;
+            }
+
+            .contenido {
+                max-width: 100%;
+            }
+
+            .titulo {
+                font-size: clamp(55px, 10vw, 80px);
+            }
+
+            .descripcion {
+                margin-left: 0;
+                padding-left: 0;
+            }
+
+            .perfil {
+                grid-row: 1;
+            }
+
+            .marco {
+                width: min(70%, 320px);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .hero {
+                padding: 35px 6%;
+                gap: 35px;
+            }
+
+            .nombre {
+                font-size: 17px;
+            }
+
+            .titulo {
+                font-size: 53px;
+                letter-spacing: -3px;
+            }
+
+            .ubicacion {
+                font-size: 14px;
+                align-items: flex-start;
+            }
+
+            .descripcion p {
+                font-size: 16px;
+            }
+
+            .botones {
+                flex-direction: column;
+            }
+
+            .boton {
+                width: 100%;
+            }
+
+            .marco {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="hero">
+
+        <!-- SECCIÓN IZQUIERDA -->
+        <section class="contenido">
+
+            <p class="nombre">Tu Nombre</p>
+
+            <h1 class="titulo">
+                Systems
+                <span>Engineer</span>
+            </h1>
+
+            <div class="ubicacion">
+                <i class="fa-solid fa-globe"></i>
+                <p>Ingeniero de Sistemas · Colombia</p>
+            </div>
+
+            <div class="descripcion">
+                <p>
+                    Ingeniero de sistemas enfocado en el desarrollo de
+                    software, soporte técnico y soluciones tecnológicas.
+                    Me interesa construir aplicaciones web funcionales,
+                    resolver problemas técnicos y crear experiencias
+                    digitales eficientes para los usuarios.
+                </p>
+
+                <div class="botones">
+
+                    <a href="https://www.linkedin.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="boton boton-azul">
+
+                        <i class="fa-brands fa-linkedin"></i>
+                        LinkedIn
+
+                    </a>
+
+                    <a href="https://github.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="boton boton-azul">
+
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+
+                    </a>
+
+                    <a href="mailto:tuemail@ejemplo.com"
+                       class="boton boton-borde">
+
+                        <i class="fa-regular fa-envelope"></i>
+                        Contacto
+
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECCIÓN DERECHA -->
+        <section class="perfil">
+
+            <div class="marco">
+
+                <img
+                    class="imagen-perfil"
+                    src="perfil.png"
+                    alt="Ilustración de perfil profesional"
+                >
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
