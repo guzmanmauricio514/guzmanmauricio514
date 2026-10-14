@@ -30,12 +30,12 @@
       </p>
       <br>
       <a href="https://www.linkedin.com/in/mauricio-guzman-b159a3443/" target="_blank" rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/LinkedIn-2789ff?style=for-the-badge&logo=linkedin&logoColor=black" alt="LinkedIn">
-      </a>
-      &nbsp;
-      <a href="mailto:guzmanmauricio514.work@gmail.com">
-        <img src="https://img.shields.io/badge/Contacto-050505?style=for-the-badge&logo=gmail&logoColor=white" alt="Contacto">
-      </a>
+  <img src="https://img.shields.io/badge/LinkedIn-2789ff?style=for-the-badge&logo=linkedin&logoColor=black" alt="LinkedIn">
+</a>
+&nbsp;
+<a href="mailto:guzmanmauricio514.work@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/Contacto-050505?style=for-the-badge&logo=gmail&logoColor=white" alt="Contacto">
+</a>
     </td>
     <td width="38%" align="center" valign="middle" style="padding: 20px;">
       <img
