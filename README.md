@@ -39,7 +39,7 @@
     </td>
     <td width="38%" align="center" valign="middle" style="padding: 20px;">
       <img
-        src="perfil.png"
+        src="perfil2.png"
         width="280"
         alt="Avatar de Mauricio Guzmán"
       >
