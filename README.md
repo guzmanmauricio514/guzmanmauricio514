@@ -62,7 +62,7 @@
     <td style="padding: 20px;">
       <p>
         Soy Ingeniero de Sistemas con interés en la tecnología,
-        la infraestructura informática y el desarrollo de software.
+        el análisis de datos y el desarrollo de software.
         Me enfoco en identificar problemas, analizar sus causas
         y aplicar soluciones que contribuyan al funcionamiento
         eficiente de los sistemas tecnológicos.
@@ -72,7 +72,7 @@
         mantenimiento de equipos, configuración de software,
         atención a usuarios y resolución de incidentes informáticos.
         También me interesa ampliar mis conocimientos en desarrollo
-        web y herramientas modernas de programación.
+        web y análisis de datos.
       </p>
       <p>
         Mi objetivo es continuar fortaleciendo mis conocimientos
@@ -114,48 +114,40 @@
         <li>Asistencia a usuarios en el uso de herramientas y recursos tecnológicos.</li>
         <li>Verificación del funcionamiento de los equipos y sus componentes.</li>
       </ul>
+      <p>
+        <strong>Experiencia agrícola (generadores de carga)</strong>
+      </p>
+      <u2>
+        <p>tengo experiencia en la gestión de operaciones agrícolas, incluyendo el seguimiento de la producción, la coordinación de entregas, el control de cantidades de producto y la organización de procesos logísticos para optimizar recursos y apoyar la toma de decisiones
+        <p>
+      <u2>
     </td>
   </tr>
 </table>
 
 <br>
+<!-- ===================================================== -->
+<!--              TECNOLOGÍAS CONOCIDAS                   -->
+<!-- ===================================================== -->
 
-<!-- ================================================ -->
-<!--                 Tecnologias conocidas                -->
-<!-- ================================================ -->
-
-<h2>
-  Tecnologias conocidas
-</h2>
-
-<br>
-
-<!-- TECNOLOGÍAS -->
+<h2> Tecnologías conocidas </h2>
 
 <p>
-  <strong><u>Tecnologías</u></strong>
+  <img
+    src="https://skillicons.dev/icons?i=py,js,ts,mysql"
+    alt="Py, JavaScript, TypeScript,mysql"
+  >
 </p>
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,sass,js,ts,react,nodejs,astro"
-       alt="Tecnologías"
-       height="40">
-</p>
-
-<br>
-
-<!-- HERRAMIENTAS -->
+<p><strong><u>Herramientas</u></strong></p>
 
 <p>
-  <strong><u>Herramientas</u></strong>
+  <img
+    src="https://skillicons.dev/icons?i=git,github,figma,vscode,windows"
+    alt="Git, GitHub, Figma, VS Code, Windows"
+    
+  >
 </p>
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=git,github,docker,figma,vscode,windows,linux"
-       alt="Herramientas"
-       height="40">
-</p>
-
 
 <!-- ===================================================== -->
 <!--                         PIE                            -->
