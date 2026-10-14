@@ -33,7 +33,7 @@
   <img src="https://img.shields.io/badge/LinkedIn-2789ff?style=for-the-badge&logo=linkedin&logoColor=black" alt="LinkedIn">
 </a>
 &nbsp;
-<a href="mailto:guzmanmauricio514.work@gmail.com" target="_blank">
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=guzmanmauricio514.work@gmail.com" target="_blank" rel="noopener noreferrer">
   <img src="https://img.shields.io/badge/Contacto-050505?style=for-the-badge&logo=gmail&logoColor=white" alt="Contacto">
 </a>
     </td>
